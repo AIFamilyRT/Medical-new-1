@@ -1,0 +1,88 @@
+
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Toekomstige Geneeskunde – Interactieve Uitleg</title>
+  <style>
+    body {
+      font-family: sans-serif;
+      padding: 2rem;
+      background: #f4f4f4;
+      color: #333;
+    }
+    h1, h2 {
+      color: #005377;
+    }
+    .section {
+      margin-bottom: 2rem;
+    }
+    .toggle {
+      cursor: pointer;
+      padding: 0.5rem;
+      background: #e0e0e0;
+      border: none;
+      margin-top: 1rem;
+    }
+    .content {
+      display: none;
+      padding: 1rem;
+      background: #fff;
+      border: 1px solid #ccc;
+    }
+  </style>
+</head>
+<body>
+  <h1>🔬 Interactieve Uitleg: Nieuwe Inzichten in Geneeskunde & Ziekten</h1>
+
+  <div class="section">
+    <h2>1. Ritmestoornissen als ziektebron</h2>
+    <button class="toggle">Toon uitleg</button>
+    <div class="content">
+      Chronische verstoring van slaap-waakritme, lichtblootstelling en mentale overprikkeling veroorzaken ziekten zoals diabetes, depressie en zelfs kanker, onafhankelijk van voeding of genen.
+    </div>
+  </div>
+
+  <div class="section">
+    <h2>2. Signaalcombinaties voorspellen ziekten</h2>
+    <button class="toggle">Toon uitleg</button>
+    <div class="content">
+      Ziekten ontstaan vaak pas wanneer meerdere triggers overlappen, zoals: laaggradige ontsteking + aminozuurtekort + mentale overbelasting → depressie. Dit model kan preventieve diagnose mogelijk maken.
+    </div>
+  </div>
+
+  <div class="section">
+    <h2>3. Virale imprinting als onzichtbare ziekteoorzaak</h2>
+    <button class="toggle">Toon uitleg</button>
+    <div class="content">
+      Virussen zoals EBV of SARS-CoV-2 kunnen genclusters jaren activeren, lang na infectie. Dit verklaart ‘onverklaarde’ vermoeidheid, auto-immuunziekten of cognitieve klachten.
+    </div>
+  </div>
+
+  <div class="section">
+    <h2>4. Omgeving > Genetica</h2>
+    <button class="toggle">Toon uitleg</button>
+    <div class="content">
+      Slechte genen veroorzaken geen ziekte als de leefomgeving goed is. Epigenetica beïnvloedt 70% van ziekteactivatie. Omgeving bepaalt of je genen actief worden.
+    </div>
+  </div>
+
+  <div class="section">
+    <h2>5. Ziekteactiviteit per uur zichtbaar maken</h2>
+    <button class="toggle">Toon uitleg</button>
+    <div class="content">
+      Ziekteactiviteit piekt op specifieke tijden. Bv: auto-immuunfluctuaties 's nachts, oxidatieve stress in de middag. Uur-specifieke therapie (chronotherapie) kan effectiviteit verdubbelen.
+    </div>
+  </div>
+
+  <script>
+    document.querySelectorAll('.toggle').forEach(button => {
+      button.addEventListener('click', () => {
+        const content = button.nextElementSibling;
+        content.style.display = content.style.display === 'block' ? 'none' : 'block';
+      });
+    });
+  </script>
+</body>
+</html>
